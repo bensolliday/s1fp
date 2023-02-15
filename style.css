@@ -1,0 +1,29 @@
+.flexwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+  }
+  
+  .flexwrapper img {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+  }
+  
+  #vanilla {
+    width: 15%;
+  }
+  
+  #egg {
+    width: 12%
+  }
+  
+  #bakingsoda {
+    width: 20%
+  }
+  
+  #sugar {
+    width: 30%
+  }
