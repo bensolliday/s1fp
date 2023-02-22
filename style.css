@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+
 #gallery {
   position: absolute; 
   left: 40%;
   top: 115px;
   color: white;
   font-size: 30px;
-  font-family: "Gill Sans", sans-serif;
+  font-family: 'Shantell Sans', cursive;
   width: 200px;
   height: 200px;
 }
@@ -86,15 +88,42 @@ body {
   }
 
   #tryagain {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Shantell Sans', cursive;
     font-size: 50px;
     display: block;
     margin-top: 20%;
     width: 100%;
     text-align: center;
+  }
 
 
-}
+#blinkingeyes {
+      background-image: url("blinkingeyes.jpg");
+      width: 100px;
+      height: 100px;
+      background-size: 400px 100px;
+      animation: go-man-go 500ms steps(4) infinite;
+      animation-play-state: paused; 
+      position: fixed;
+      top: 0px;
+      right: 100px;
+      
+    }
+    
+    #blinkingeyes:hover {
+      cursor: pointer;
+      animation: go-man-go 500ms steps(4) infinite;
+      animation-play-state: play; 
+    }
+    
+    @keyframes go-man-go {
+        from {
+            background-position: 0% 0%;
+        }
+        to {
+            background-position: -400% 0%;
+        }
+    }
 
 a:link {
     color: white;
@@ -119,3 +148,4 @@ a:visited {
   margin-left: 13%;
   width: 70%
 }
+
